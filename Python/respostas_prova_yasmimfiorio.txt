@@ -1,0 +1,53 @@
+QUESTÃO 1 
+for i in range(5):
+    nome = input("Digite o sue nome: ")
+    idade = int(input("Digite a sua idade: "))
+    sexo = input("Informe o seu sexo (F para feminino e M para masculino): ")
+    idade_quantidade_homens_25 = 0
+    
+    media = idade /5
+    print("Méida")
+
+    if idade_quantidade_homens_25 > 3:
+        print(f"A quantidade de homens acima de 25 anos é de: {idade_quantidade_homens_25}")
+
+print(f"A média de idade do grupo é: {media}")
+print(f"A quantidade de homens acima de 25 anos é de: {idade_quantidade_homens_25}")
+
+QUESTÃO 2 
+
+peso = 0
+maior_peso = 0
+while True:
+    peso = float(input("Digite o peso do atleta (ou 0 para sair): "))
+    if peso == 0:
+        break
+    if peso > 70 :
+        print(f"Maior peso informado, por enquanto: {peso}")
+    else:
+        peso >= 80
+        print(f"Maior peso informado é de: {maior_peso}")
+
+print(f"Maior peso informado: {maior_peso}")
+
+QUESTÃO 3
+#Comprando até 3 livros: desconto 8%
+# Comprando 4 ou mais livros: desconto de 18%
+#Preço fixop de qualquer livro R$39,90
+
+quantidade = int(input("Quantos livros você está comprando? "))
+PRECO_LIVRO = 39.90
+sem_desconto = 0
+com_desconto = 0
+
+if quantidade == 3:
+    sem_desconto = PRECO_LIVRO + quantidade %8
+    print("Desconto de 8%")
+
+else:
+    quantidade >= 4
+    com_desconto = PRECO_LIVRO + quantidade %18
+    print("Desconto de 18%")
+
+print(f"Valor total SEM desconto é: {sem_desconto}")
+print(f"Valor total com desconto é: {com_desconto}")
